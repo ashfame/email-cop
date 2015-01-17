@@ -2,8 +2,11 @@
 the_post();
 $email_body = get_post( $post->ID )->post_content;
 
+// if you have a special edge case for which you need to check against the email body, use the filter below
+$is_it_a_html_email = apply_filters( 'wp_cop_email_is_email_html_check', false !== strpos( $email_body, 'DOCTYPE html' ), $email_body );
+
 // If its a complete HTML email, then we just try to show email meta information on top of the actual email
-if ( false !== strpos( $email_body, 'DOCTYPE html' ) ) {
+if ( $is_it_a_html_email ) {
 	?>
 	<style>
 		.email-meta {
