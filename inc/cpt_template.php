@@ -3,7 +3,7 @@ the_post();
 $email_body = get_post( $post->ID )->post_content;
 
 // If its a complete HTML email, then we just try to show email meta information on top of the actual email
-if ( false !== strpos( $email_body, '<!DOCTYPE html>' ) ) {
+if ( false !== strpos( $email_body, 'DOCTYPE html' ) ) {
 	?>
 	<style>
 		.email-meta {
