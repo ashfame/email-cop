@@ -1,6 +1,4 @@
-=== Plugin Name ===
-Plugin Name: Email Cop
-Plugin URI: http://wordpress.org/plugins/email-cop/
+=== Email Cop ===
 Contributors: ashfame
 Donate link: http://ashfame.com/
 Tags: email, development, tools
@@ -10,13 +8,17 @@ Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Prevents WordPress from sending out emails and save them so that they can be previewed.
+Prevents WordPress from sending out emails and save them so that you can preview them without actually having to send them.
 
 == Description ==
 
-Best for checking or designing emails in development environment.
+Prevents WordPress from sending out emails and save them so that you can preview them without actually having to send them. Best for checking or designing emails in development environment.
 
 Please report any issues directly to Github repo - https://github.com/ashfame/wp-email-cop
+
+Pull requests are welcome :-)
+
+Icon Credit: Cop icon - http://www.aha-soft.com/
 
 == Installation ==
 
@@ -32,6 +34,12 @@ Though if you know what you are doing, you are probably not reading this right n
 
 == Screenshots ==
 
+1. Emails saved as Custom Post Type
+2. View emails in browser
+
+== Upgrade Notice ==
+
+* Always use the latest and the greatest for the best experience.
 
 == Changelog ==
 
