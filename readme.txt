@@ -14,7 +14,7 @@ Prevents WordPress from sending out emails and save them so that you can preview
 
 Prevents WordPress from sending out emails and save them so that you can preview them without actually having to send them. Best for checking or designing emails in development environment.
 
-Please report any issues directly to Github repo - https://github.com/ashfame/wp-email-cop
+Please report any issues directly to Github repo - https://github.com/ashfame/email-cop/
 
 Pull requests are welcome :-)
 
