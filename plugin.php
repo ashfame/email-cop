@@ -28,6 +28,10 @@ class Ashfame_WP_Email_Cop {
 		// register CPT
 		add_action( 'init', array( $this, 'register_post_type' ) );
 
+		// flush rewrite rules so that view link starts working on its own
+		register_activation_hook( __FILE__, array( $this, 'activation' ) );
+		register_deactivation_hook( __FILE__, array( $this, 'deactivation' ) );
+
 		// provide CPT template file
 		add_filter( 'single_template', array( $this, 'provide_cpt_template' ) );
 	}
@@ -39,6 +43,15 @@ class Ashfame_WP_Email_Cop {
 		}
 
 		return self::$instance;
+	}
+
+	public function activation() {
+		$this->register_post_type();
+		flush_rewrite_rules();
+	}
+
+	public function deactivation() {
+		flush_rewrite_rules();
 	}
 
 	public function admin_notice() {
