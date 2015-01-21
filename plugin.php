@@ -5,7 +5,7 @@ Plugin Name: Email Cop
 Plugin URI: https://wordpress.org/plugins/email-cop/
 Description: Prevent WordPress from sending any emails, also have a preview option of viewing emails (best for development)
 Author: Ashfame
-Version: 0.1
+Version: 0.1.1
 Author URI: http://ashfame.com/
 */
 

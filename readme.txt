@@ -43,5 +43,8 @@ Though if you know what you are doing, you are probably not reading this right n
 
 == Changelog ==
 
+= 0.1.1 =
+* Flush rewrite rules on activation
+
 = 0.1 =
 * Initial release
