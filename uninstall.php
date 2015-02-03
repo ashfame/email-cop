@@ -19,6 +19,6 @@ $email_cop_post_ids = get_posts(
 //delete posts
 if ( $email_cop_post_ids ) {
 	foreach ( $email_cop_post_ids as $postID ) {
-		wp_delete_post( $postID, true);
+		wp_delete_post( $postID, true );
 	}
 }
