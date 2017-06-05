@@ -55,7 +55,9 @@ class Ashfame_WP_Email_Cop {
 	}
 
 	public function admin_notice() {
-		echo '<div class="error"><p><span class="dashicons dashicons-megaphone"></span> <strong>WP Email Cop</strong> is active and will prevent any emails from being sent. <a href="' . admin_url( 'edit.php?post_type=wp_cop_email' ) . '">View Emails</a></p></div>';
+		if ( current_user_can( 'manage_options' ) ) {
+			echo '<div class="error"><p><span class="dashicons dashicons-megaphone"></span> <strong>WP Email Cop</strong> is active and will prevent any emails from being sent. <a href="' . admin_url( 'edit.php?post_type=wp_cop_email' ) . '">View Emails</a></p></div>';
+		}
 	}
 
 	public function register_post_type() {
